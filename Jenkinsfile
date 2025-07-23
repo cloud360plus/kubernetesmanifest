@@ -17,7 +17,7 @@ node {
                         echo "Before change:"
                         cat deployment.yaml
 
-                        sed -i "s|raj80dockerid/test.*|raj80dockerid/test:${DOCKERTAG}|g" deployment.yaml
+                        sed -i "s|dockerid/test.*|dockerid/test:${DOCKERTAG}|g" deployment.yaml
 
                         echo "After change:"
                         cat deployment.yaml
